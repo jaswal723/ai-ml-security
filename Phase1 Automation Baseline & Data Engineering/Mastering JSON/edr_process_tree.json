@@ -1,0 +1,33 @@
+{
+    "process_name": "explorer.exe",
+    "pid": 1024,
+    "techniques": ["T1082"],
+    "children": [
+        {
+            "process_name": "cmd.exe",
+            "pid": 2048,
+            "techniques": ["T1059"],
+            "children": [
+                {
+                    "process_name": "powershell.exe",
+                    "pid": 3072,
+                    "techniques": ["T1059", "T1105"],
+                    "children": [
+                        {
+                            "process_name": "rundll32.exe",
+                            "pid": 4096,
+                            "techniques": ["T1218"],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "process_name": "wmiprvse.exe",
+            "pid": 5050,
+            "techniques": ["T1047"],
+            "children": []
+        }
+    ]
+}

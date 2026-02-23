@@ -1,0 +1,1 @@
+# Task - Hard: Take a deeply nested JSON file representing a complex EDR process tree. Write a recursive function that searches through the entire JSON structure and extracts all unique MITRE ATT&CK technique IDs (e.g., "T1059") into a Python set.

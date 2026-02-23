@@ -2,7 +2,7 @@
 
 import csv
 log_file=[]
-with open("auth_logs.csv","r") as f:
+with open(".\Phase1 Automation Baseline & Data Engineering\File Handling & CSVs\\auth_logs.csv","r") as f:
     reader = csv.DictReader(f)
     for row in reader:
         log_file.append(row)
@@ -19,7 +19,7 @@ final_list = []
 for key,value in final_dict.items():
     final_list.append({'Username':key,'FailedLoginCount':value})
 
-with open("auth_logs_failed_results.csv","w",newline = "") as f:
+with open(".\Phase1 Automation Baseline & Data Engineering\File Handling & CSVs\\auth_logs_failed_results.csv","w",newline = "") as f:
     writer = csv.DictWriter(f,fieldnames=['Username','FailedLoginCount'])
     writer.writeheader()
     writer.writerows(final_list)

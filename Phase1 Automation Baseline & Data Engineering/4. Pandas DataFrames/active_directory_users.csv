@@ -1,0 +1,11 @@
+UserID,SamAccountName,DisplayName,Department,Title,LastLogonDate,Email
+101,rjones,Robert Jones,Finance,Analyst,18-09-2024 10:23,rjones@corp.local
+102,amishra,Anita Mishra,HR,Manager,02-10-2024 09:10,amishra@corp.local
+103,spatel,Sunil Patel,IT,SysAdmin,,spatel@corp.local
+104,ksingh,Karan Singh,Security,Engineer,25-09-2024 08:45,ksingh@corp.local
+105,nroy,Neha Roy,Sales,Executive,01-10-2024 16:30,nroy@corp.local
+106,vkumar,Vivek Kumar,IT,Support,29-09-2024 11:55,vkumar@corp.local
+107,ssharma,Sonal Sharma,Finance,Accountant,,ssharma@corp.local
+108,pkhan,Praveen Khan,IT,Engineer,03-10-2024 17:20,pkhan@corp.local
+109,mjoshi,Meena Joshi,Marketing,Specialist,30-09-2024 14:10,mjoshi@corp.local
+110,atandon,Arjun Tandon,Legal,Advisor,28-09-2024 12:00,atandon@corp.local

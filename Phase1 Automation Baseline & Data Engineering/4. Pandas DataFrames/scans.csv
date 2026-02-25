@@ -1,0 +1,9 @@
+IP,Vulnerability
+192.168.1.10,OpenSSH outdated
+192.168.1.12,SMB Signing Disabled
+192.168.1.15,Weak TLS Cipher
+10.0.0.5,Unpatched Apache Server
+172.16.0.3,Default Credentials
+10.10.10.2,Open RDP Port
+192.168.1.22,Insecure SNMP Configuration
+192.168.1.25,Anonymous FTP Access

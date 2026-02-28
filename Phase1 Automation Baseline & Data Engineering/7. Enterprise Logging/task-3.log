@@ -1,0 +1,4 @@
+2026-02-28 14:00:00,730 - INFO - The API request to IPIFY was sent successfully.
+2026-02-28 14:00:00,731 - INFO - The machine IP Address has been successfully fetched from the IPIFY - 117.241.94.239.
+2026-02-28 14:00:01,528 - INFO - Request sent to Virustotal API for the IP address.
+2026-02-28 14:00:01,528 - INFO - Execution Complete.

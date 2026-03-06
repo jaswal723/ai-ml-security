@@ -12,8 +12,7 @@ detection:
    - 1102
    - 104
  condition: selection
-falsepositives: Unlikely
 level: medium
 tags: 
  - attack.t1070.001
- - attack.defense_evasion
+ - attack.defense-evasion

@@ -1,0 +1,19 @@
+title: "Windows Event Logs Cleared"
+id: 016f9e47-0f54-4e04-ae3a-bf6c4f77c96e
+status: test
+description: "Detects the clearning of audit logs or system log file to detect defence evasion activity from the attacker."
+author: "Rithik Jaswal"
+date: 2026/03/06
+logsource:
+ product: windows 
+detection:
+ selection:
+  EventID:
+   - 1102
+   - 104
+ condition: selection
+falsepositives: Unlikely
+level: medium
+tags: 
+ - attack.t1070.001
+ - attack.defense_evasion

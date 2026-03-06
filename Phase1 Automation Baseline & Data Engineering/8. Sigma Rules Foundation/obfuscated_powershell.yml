@@ -1,0 +1,29 @@
+title: Obfuscated Powershell Command Detected
+id: 6b6ab996-66d1-4142-bd47-c1f0f7b1d26b
+status: test
+description: Detects the execution of obfuscated commands. Hunts for process creation events with specific artifcats.
+author: Rithik Jaswal
+date: 2026/03/06
+logsource:
+ category: process_creation
+ product: windows 
+detection:
+ selection1:
+  Image|endswith:
+   - '\powershell.exe'
+   - '\pwsh.exe' 
+ selection2:
+  OriginalFileName:
+   - powershell.exe
+   - pwsh.exe
+ selection3:
+  CommandLine|contains:
+   - ' -enc '
+   - ' -EncodedCommand '
+   - ' -ec '
+   - ' -en '
+ condition: (selection1 or selection2) and selection3
+level: medium
+tags:
+ - attack.execution
+ - attack.t1027.010
